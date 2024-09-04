@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-items: center;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            max-width: 25rem;
+            text-align: left;
+            gap: 1rem;
+            /* Space between image and text */
+        }
+
+        .menu-item img {
+            width: 150px;
+            /* Set a fixed width for the image */
+            /* height: auto; */
+        }
+
+        .item {
+            flex: 1;
+        }
+
+        .item header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.2rem;
+        }
+
+        .item h4 {
+            margin: 0;
+        }
+
+        .item-text {
+            margin: 0;
+            padding-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <article class="menu-item">
+            <img src="./images/team2.png" alt="Team Image">
+            <div class="item">
+                <header>
+                    <h4>Buttermilk Pancakes</h4>
+                    <h4 class="price">$15</h4>
+                </header>
+                <p class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quia?</p>
+            </div>
+        </article>
+
+        <article class="menu-item">
+            <img src="./images/team2.png" alt="Team Image">
+            <div class="item">
+                <header>
+                    <h4>Buttermilk Pancakes</h4>
+                    <h4 class="price">$15</h4>
+                </header>
+                <p class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quia?</p>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

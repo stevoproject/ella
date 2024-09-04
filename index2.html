@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* gap: 3rem 2rem; */
+            width: 1200px;
+            margin: 0 auto;
+            justify-items: center;
+            /* max-width: 1170px; */
+        }
+
+        .item header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* .item {
+            display: flex;
+        } */
+
+        .item img {
+            margin-right: 10px;
+        }
+
+        .item p {
+            margin: 0;
+        }
+
+        .item h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-item {
+            display: flex;
+            text-align: left;
+            gap: 1rem 2rem;
+            max-width: 25rem;
+        }
+
+        .item-text {
+            margin-bottom: 0;
+            padding-top: .2rem;
+        }
+
+        .menu-item img {
+            width: 150px;
+            /* Set a fixed width for the image */
+            /* height: auto; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <article class="menu-item">
+            <img src="./images/team2.png" alt="Team Image">
+            <div class="item">
+
+                <header>
+                    <h4>buttermilk pancakes</h4>
+                    <h4 class="price">$15</h4>
+                </header>
+                <br>
+                <p class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quia?</p>
+            </div>
+        </article>
+
+
+
+        <article class="menu-item">
+            <img src="./images/team2.png" alt="Team Image">
+            <div class="item">
+
+                <header>
+                    <h4>buttermilk pancakes</h4>
+                    <h4 class="price">$15</h4>
+                </header>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quia?</p>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>
